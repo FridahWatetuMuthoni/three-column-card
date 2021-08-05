@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap");
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lexend',sans-serif;
+  font-size: 15px;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f2f2f2;
+  background-color: #f2f2f2;
+  line-height: 2;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.container {
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+  padding: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .content:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.container .content:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.container .sedan {
+  background-color: #e38826;
+}
+
+.container .sedan .btn {
+  color: #e38826;
+}
+
+.container .suv {
+  background-color: #006970;
+}
+
+.container .suv .btn {
+  color: #006970;
+}
+
+.container .luxury {
+  background-color: #004241;
+}
+
+.container .luxury .btn {
+  color: #004241;
+}
+
+.container h1 {
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.container .btn {
+  border: none;
+  background-color: #f2f2f2;
+  width: 50%;
+  padding: 15px 5px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 100%;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 375px;
+    margin: 40px 0;
+  }
+  .container h1 {
+    margin-bottom: 10px;
+  }
+  .container .content {
+    padding: 20px;
+    height: 60vh;
+  }
+  .container .content .btn {
+    margin: 20px 0;
+  }
+  .container .content:first-child {
+    border-radius: 10px 10px 0 0;
+  }
+  .container .content:last-child {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    max-width: 300px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
